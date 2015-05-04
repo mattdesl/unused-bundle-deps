@@ -32,7 +32,7 @@ dependencies [5]
 
 #### `unused(src, [opt], [cb])`
 
-Finds unused dependencies in `src` by looking through your `"dependencies"` of the closest `package.json` file. Options can be:
+Finds unused dependencies in `src` (browser-pack bundle) by looking through your `"dependencies"` of the closest `package.json` file. Options can be:
 
 - `cwd` the dir to search for pakage.json, defualt `process.cwd()`
 - `filter` a filter function for [closest-package](https://www.npmjs.com/package/closest-package)

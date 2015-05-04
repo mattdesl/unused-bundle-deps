@@ -4,8 +4,18 @@
 
 For a given browserify bundle, lists all the dependencies in your `package.json` which do not appear in that bundle. In large codebases this can be useful to find dependencies that are no longer relevant.
 
+
 ```sh
-unused-bundle-deps -p < my-svg-app.js
+#install
+npm install -g unused-bundle-deps
+
+#use it like so
+browserify index.js | unused-bundle-deps -p
+```
+
+Example output with `-p` (pretty) flag:
+
+```
 dependencies [5]
 ├── abs-svg-path
 ├── adaptive-bezier-curve

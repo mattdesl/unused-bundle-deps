@@ -2,7 +2,9 @@
 
 [![stable](http://badges.github.io/stability-badges/dist/stable.svg)](http://github.com/badges/stability-badges)
 
-For a given browserify bundle, lists all the dependencies in your `package.json` which do not appear in that bundle. In large codebases this can be useful to find dependencies that are no longer relevant.
+For a given browserify bundle, lists all the dependencies in your `package.json` which do not appear in that bundle. In large codebases this can be useful to find dependencies that are no longer relevant in production (i.e. for your legal teams).
+
+*Note:* This works on dependencies through the entire bundle; for top-level dependencies you can use [dependency-check](https://www.npmjs.com/package/dependency-check).
 
 
 ```sh
@@ -50,6 +52,11 @@ Options:
   --pretty, -p   pretty-print the results
   --cwd          current dir to search for package.json
 ```
+
+## Also See
+
+- [dependency-check](https://www.npmjs.com/package/dependency-check)
+- [snoop-bundle-deps](https://www.npmjs.com/package/snoop-bundle-deps)
 
 ## License
 

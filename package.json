@@ -1,6 +1,6 @@
 {
   "name": "unused-bundle-deps",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "lists unused dependencies in a bundle",
   "main": "index.js",
   "license": "MIT",

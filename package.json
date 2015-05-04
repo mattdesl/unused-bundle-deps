@@ -1,0 +1,53 @@
+{
+  "name": "unused-bundle-deps",
+  "version": "1.0.0",
+  "description": "lists unused dependencies in a bundle",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "archy": "^1.0.0",
+    "get-stdin": "^4.0.1",
+    "minimist": "^1.1.1",
+    "read-closest-package": "^1.0.1",
+    "snoop-bundle-deps": "^1.0.2"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.0.0"
+  },
+  "scripts": {
+    "test": "standard && node test/index.js | faucet"
+  },
+  "standard": {
+    "ignore": [
+      "test/fixtures/**"
+    ]
+  },
+  "keywords": [
+    "unused",
+    "bundle",
+    "browserify",
+    "pack",
+    "browser-pack",
+    "dep",
+    "dependencies",
+    "dependency",
+    "deps"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jam3/unused-bundle-deps.git"
+  },
+  "homepage": "https://github.com/Jam3/unused-bundle-deps",
+  "bugs": {
+    "url": "https://github.com/Jam3/unused-bundle-deps/issues"
+  },
+  "bin": {
+    "unused-bundle-deps": "./bin/index.js"
+  }
+}
